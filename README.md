@@ -84,13 +84,16 @@ Merged grouped datasets with original tables to retrieve:
 #### Price Increase %
 
 DAX
+
 DIVIDE(
     [Latest Price] - [Earliest Price],
     [Earliest Price]
 )
 
 ###Price Status Classification
+
 DAX
+
 IF(
     [Price Increase %] > 0.30,
     "Unusual Increase",
